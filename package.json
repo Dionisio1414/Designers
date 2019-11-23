@@ -1,0 +1,38 @@
+{
+	"name": "Designers",
+	"version": "4.0.0",
+	"description": "Designers",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "WebDesign Master",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.6.2",
+		"@babel/preset-env": "^7.6.2",
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.3",
+		"babel-preset-es2015": "^6.24.1",
+		"browser-sync": "^2.26.7",
+		"del": "^4.1.1",
+		"font-awesome": "^4.7.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^6.1.0",
+		"gulp-babel": "^8.0.0",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-image-resize": "^0.13.0",
+		"gulp-imagemin": "^6.0.0",
+		"gulp-notify": "^3.2.0",
+		"gulp-rename": "^1.4.0",
+		"gulp-rsync": "0.0.8",
+		"gulp-sass": "^4.0.2",
+		"gulp-uglify": "^3.0.2",
+		"gulp-util": "^3.0.8",
+		"popper.js": "^1.16.0"
+	},
+	"dependencies": {
+		"gm": "^1.23.1"
+	}
+}

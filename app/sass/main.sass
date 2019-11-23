@@ -1,0 +1,64 @@
+@import "fonts"
+@import "vars"
+@import "libs"
+@import "_mixins/set-color"
+@import "_layout/header"
+@import "_pages/index"
+@import "_layout/footer"
+
+::placeholder
+	color: #A2A8A5
+
+::selection
+	background-color: set-color(accent)
+	color: #fff
+
+html
+	overflow-x: hidden
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	background-color: #FAFAFA
+	font-family: $default-font
+	overflow-x: hidden
+	color: set-color(text-color)
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+.text-left
+	text-align: left
+.text-right
+	text-align: right
+
+b, strong
+	font-weight: bold
+
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+
+/* Fix fields for Safari */
+input, 
+textarea
+	box-shadow: none
+	border-radius: 0
+	line-height: normal
+	appearance: none
+
+@import "media" // Always at the end
