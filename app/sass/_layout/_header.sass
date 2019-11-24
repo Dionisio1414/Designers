@@ -58,9 +58,19 @@
 					color: #fff
 	&__bottom
 		background-color: #878787
+		transition: .5s ease
+		&.fixed
+			position: fixed
+			top: 0
+			width: 100%
+			z-index: 10
+			.header__bottom-logo 
+				img
+					max-width: 80px
 		&-logo
 			img
 				max-width: 90px
+				transition: .25s ease
 		&-navigation
 			ul
 				padding: 0

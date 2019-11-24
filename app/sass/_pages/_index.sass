@@ -1,0 +1,90 @@
+.home
+	position: relative
+	margin-bottom: 60px
+	.tns-nav
+		position: absolute
+		right: 145px
+		bottom: 27px
+		z-index: 1
+		button
+			background-color: transparent
+			border: none
+			width: 20px
+			height: 20px
+			border-radius: 50%
+			padding: 0
+			margin-right: 9px
+			background-color: set-color(dark)
+			transition: .25s ease-in-out
+			&:last-child
+				margin-right: 0
+			&.tns-nav-active
+				background-color: set-color(accent)
+	
+.description
+	margin-bottom: 25px
+	&__container
+		background-color: #fff
+		display: flex
+		margin-top: 50px
+		padding: 22px
+		&-image
+			margin-right: 20px
+			img
+				max-width: 476px
+		&-text
+			p
+				font-family: $bold
+				font-size: 19px
+				line-height: 28px
+				text-transform: lowercase
+				margin: 0
+				color: #959595
+				&:first-letter
+					text-transform: uppercase
+.news
+	text-align: center
+	margin-bottom: 25px
+	&__container
+		margin-bottom: 28px
+		&-image
+			position: relative
+			display: block
+			.line-text
+				position: absolute
+				bottom: 0
+				width: 100%
+				padding: 15px 0
+				background-color: rgba(set-color(accent), .5)
+				span
+					display: block
+					font-size: 19px
+					line-height: 27px
+					text-align: center
+					color: #fffefe
+
+.partners
+	margin-bottom: 25px
+	h2
+		margin-bottom: -20px
+	&__container
+		display: flex
+		justify-content: center
+		align-items: center
+		&-image
+			margin-right: 60px
+			&:last-child
+				margin: 0
+
+.persons
+	text-align: center
+	margin-bottom: 60px
+	&__links
+		text-align: left
+		a
+			font-size: 15px
+			line-height: 20px
+			text-decoration: none
+			color: #756d6d
+	.button
+		margin-top: 30px
