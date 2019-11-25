@@ -3,6 +3,7 @@
 @import "libs"
 @import "_mixins/set-color"
 @import "_layout/header"
+@import "_layout/popup-menu"
 @import "_pages/index"
 @import "_layout/footer"
 
@@ -12,6 +13,11 @@
 ::selection
 	background-color: set-color(grey)
 	color: #fff
+
+html, 
+body
+	&.not--scroll
+		overflow: hidden
 
 html
 	overflow-x: hidden

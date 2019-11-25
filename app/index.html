@@ -12,9 +12,10 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 	<!-- Template Basic Images Start -->
-	<!--
-	<meta property="og:image" content="path/to/image.jpg">
+	
+<!--	<meta property="og:image" content="path/to/image.jpg">-->
 	<link rel="icon" href="img/favicon/favicon.ico">
+<!--
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
@@ -23,6 +24,7 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 -->
+
 	<!-- Template Basic Images End -->
 
 	<!-- Custom Browsers Color Start -->
@@ -39,12 +41,37 @@
 	</noscript>
 	<!-- Конец сообщения -->
 
+	<!-- Popup menu -->
+
+	<div class="popup-menu">
+		<div class="popup-menu__close">
+			<span></span>
+			<span></span>
+		</div>
+		<div class="popup-menu__navigation">
+			<nav>
+				<ul>
+					<li><a href="#">ПРО НАС</a></li>
+					<li><a href="#">НОВИНИ</a></li>
+					<li><a href="#">АРХІВ ПОДІЙ</a></li>
+					<li><a href="#">ПЕРСОНАЛІЇ</a></li>
+					<li><a href="#">ПАМ'ЯТАЄМО</a></li>
+					<li><a href="#">КОНТАКТИ</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div class="popup-overlay"></div>
+
+	<!-- End popup menu -->
+
 	<main role="main">
 		<header class="header">
 			<div class="header__information">
 				<div class="container">
 					<div class="row">
-						<div class="col d-flex justify-content-end align-items-center">
+						<div class="col d-flex justify-content-between justify-content-md-end align-items-center">
 							<div class="header__information-socials">
 								<ul>
 									<li><a href="#"><img src="img/icons/email.svg" alt=""></a></li>
@@ -63,6 +90,10 @@
 								<button type="button">
 									<img src="img/icons/search.svg" alt="">
 								</button>
+								<div class="close">
+									<span></span>
+									<span></span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -71,7 +102,7 @@
 			<div class="header__bottom">
 				<div class="container">
 					<div class="row">
-						<div class="col-xl-2">
+						<div class="col-6 col-lg-2 col-xl-2">
 							<a href="#" class="header__bottom-logo">
 								<picture>
 									<source scrset="img/logo.svg" type="image/svg+xml">
@@ -79,7 +110,7 @@
 								</picture>
 							</a>
 						</div>
-						<div class="col-xl-10 d-flex align-items-center justify-content-end">
+						<div class="col-6 col-lg-10 col-xl-10 d-flex align-items-center justify-content-end">
 							<nav class="header__bottom-navigation">
 								<ul>
 									<li><a href="#">ПРО НАС</a></li>
@@ -89,6 +120,11 @@
 									<li><a href="#">ПАМ'ЯТАЄМО</a></li>
 									<li><a href="#">КОНТАКТИ</a></li>
 								</ul>
+								<button type="button" class="hamburger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
 							</nav>
 						</div>
 					</div>
@@ -131,7 +167,7 @@
 			<div class="news__container">
 				<div class="container">
 					<div class="row">
-						<div class="col-xl-3">
+						<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
 							<a href="#" class="news__container-image">
 								<img src="img/news-image-1.png" alt="" class="img-responsive img-width">
 								<div class="line-text">
@@ -139,7 +175,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-3">
+						<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
 							<a href="#" class="news__container-image">
 								<img src="img/news-image-2.png" alt="" class="img-responsive img-width">
 								<div class="line-text">
@@ -147,7 +183,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-3">
+						<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
 							<a href="#" class="news__container-image">
 								<img src="img/news-image-3.png" alt="" class="img-responsive img-width">
 								<div class="line-text">
@@ -155,7 +191,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-3">
+						<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
 							<a href="#" class="news__container-image">
 								<img src="img/news-image-4.png" alt="" class="img-responsive img-width">
 								<div class="line-text">
@@ -188,7 +224,7 @@
 			<h2>ПЕРСОНАЛІЇ</h2>
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-3">
+					<div class="col-md-6 col-lg-3 col-xl-3">
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
@@ -237,7 +273,7 @@
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 					</div>
-					<div class="col-xl-3">
+					<div class="col-md-6 col-lg-3 col-xl-3">
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
@@ -286,7 +322,7 @@
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 					</div>
-					<div class="col-xl-3">
+					<div class="col-md-6 col-lg-3 col-xl-3">
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
@@ -335,7 +371,7 @@
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 					</div>
-					<div class="col-xl-3">
+					<div class="col-md-6 col-lg-3 col-xl-3">
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
 						<div class="persons__links"><a href="#">Левітін Артем Альбертович</a></div>
@@ -388,11 +424,11 @@
 			</div>
 			<a href="#" class="button">ПАМ'ЯТАЄМО</a>
 		</section>
-		
+
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-4">
+					<div class="col-12 col-lg-4 col-xl-4">
 						<div class="footer__navigation">
 							<nav>
 								<ul>
@@ -406,7 +442,7 @@
 							</nav>
 						</div>
 					</div>
-					<div class="col-xl-4">
+					<div class="col-12 col-lg-4 col-xl-4">
 						<div class="footer__socials">
 							<div class="contacts">
 								<span>
@@ -425,11 +461,11 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-xl-4">
+					<div class="col-12 col-lg-4 col-xl-4">
 						<div class="footer__brands">
 							<img src="img/partners/partner-1-white.png" alt="" class="img-responsive">
 							<img src="img/partners/hdmm-white.png" alt="" class="img-responsive">
-							<img src="img/partners/kubis-white.png" alt="" class="img-responsive">	
+							<img src="img/partners/kubis-white.png" alt="" class="img-responsive">
 						</div>
 					</div>
 				</div>

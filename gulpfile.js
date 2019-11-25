@@ -100,25 +100,46 @@ gulp.task('cleanimg', function() {
 	return del(['app/img/@*'], { force:true })
 });
 
-gulp.task('build', gulp.series('styles', 'scripts'), function() {
-	
-	var buildCss = gulp.src(gulp.series('app/css/main.min.css'))
-	.pipe(gulp.dest('dist/css'));
-	
-	var buildFonts = gulp.src('app/fonts/**/*')
-	.pipe(gulp.dest('dist/fonts'));
-	
-	var buildImg = gulp.src('app/img/**/*')
-	.pipe(gulp.dest('dist/img'));
-	
-	var buildJs = gulp.src([
-		'app/js/scripts.min.js'
-	])
-	.pipe(gulp.dest('dist/js'));
-	
-	var buildHtml = gulp.src('app/*.html')
-	.pipe(gulp.dest('dist'));
-});
+function clean(done) {
+	return del('./dist')
+	done();
+}
+
+function copyFiles (done) {
+	gulp.src('app/*.html')
+		.pipe(gulp.dest('./dist'))
+	gulp.src('app/fonts/**/*')
+		.pipe(gulp.dest('./dist/fonts'))
+	gulp.src('app/css/main.min.css')
+		.pipe('./dist/css')
+	gulp.src('app/img/**/*')
+		.pipe(gulp.dest('./dist/img'))	
+	gulp.src('app/js/scripts.min.js')
+		.pipe(gulp.dest('./dist/js'))
+	//done();
+}
+
+gulp.task('build', gulp.series(clean, copyFiles));
+
+//gulp.task('build', gulp.series('styles', 'scripts'), function() {
+//	
+//	var buildCss = gulp.src(gulp.series('app/css/main.min.css'))
+//	.pipe(gulp.dest('./dist/css'));
+//	
+//	var buildFonts = gulp.src('app/fonts/**/*')
+//	.pipe(gulp.dest('./dist/fonts'));
+//	
+//	var buildImg = gulp.src('app/img/**/*')
+//	.pipe(gulp.dest('./dist/img'));
+//	
+//	var buildJs = gulp.src([
+//		'app/js/scripts.min.js'
+//	])
+//	.pipe(gulp.dest('./dist/js'));
+//	
+//	var buildHtml = gulp.src('app/*.html')
+//	.pipe(gulp.dest('./dist'));
+//});
 
 
 // If Gulp Version 3

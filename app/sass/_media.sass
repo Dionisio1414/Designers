@@ -2,8 +2,148 @@
 
 +media-breakpoint-down(lg)
 	
+	.description
+		&__container
+			&-image 
+				img
+					max-width: 400px
+			&-text 
+				p
+					font-size: 16px
+					line-height: 27px
+		
 +media-breakpoint-down(md)
+	
+	.header
+		&__bottom
+			&-navigation 
+				ul
+					display: none
+				.hamburger
+					display: block
+	
+	.description
+		&__container
+			flex-direction: column
+			align-items: center
+			&-image
+				margin-right: 0
+				margin-bottom: 25px
+	
+	.news
+		&__container
+			.container
+				.row
+					> div
+						&:first-child,
+						&:nth-child(2)
+							margin-bottom: 15px
+	
+	.persons
+		&__links
+			text-align: center
+		.container
+			.row
+				> div
+					&:first-child,
+					&:nth-child(2)
+						margin-bottom: 15px
+	
+	.footer
+		&__navigation
+			text-align: center
+		&__socials
+			text-align: center
+			margin-top: 25px
+		&__brands
+			justify-content: space-around
+			margin-top: 25px
 	
 +media-breakpoint-down(sm)
 	
+	.header
+		&__information
+			min-height: 62px
+			&-search
+				&.show
+					position: absolute
+					width: 100%
+					right: 0
+					top: 0
+					input
+						background-color: #fff
+						border-color: set-color(grey)
+						&::placeholder
+							color: set-color(grey)
+					button
+						background-color: set-color(grey)
+	
+	.home
+		margin-bottom: 30px
+		.tns-nav
+			right: auto
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+	
+	.partners
+		&__container
+			flex-direction: column
+			&-image
+				margin-bottom: 45px
+				margin-right: 0
+				&:last-child
+					margin: 0
+	
+	
 +media-breakpoint-down(xs)
+	
+	.header
+		&__information
+			&-search
+				&.show
+					right: auto
+					width: calc(100% - 30px)
+					top: 0
+	
+	.popup-menu
+		width: 70%
+	
+	.home
+		.tns-nav 
+			button
+				width: 15px
+				height: 15px
+	
+	.description
+		&__container
+			&-image 
+				img
+					max-width: 100%
+	
+	.news
+		&__container 
+			.container 
+				.row
+					>
+						div
+							margin-bottom: 15px
+	
+	.header
+		&__information
+			&-socials
+				display: none
+		&__bottom
+			&-logo 
+				img
+					max-width: 70px
+			&.fixed 
+				.header__bottom-logo 
+					img
+						max-width: 55px
+					
+	
+	.footer
+		&__brands
+			img
+				max-width: 65px
