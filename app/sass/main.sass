@@ -71,23 +71,28 @@ section
 	h1, 
 	h2
 		text-align: center
+		margin: 0
 	h2
 		font-size: 35px
-		line-height: 117px
+		line-height: 110px
 		color: set-color(dark)
 
 .button
 	display: inline-block
-	background-color: #B2B2B3
+	//background-color: #B2B2B3
+	border: 2px solid #B2B2B3
 	font-size: 23px
 	text-transform: uppercase
 	line-height: 31px
 	text-decoration: none
 	font-weight: normal
-	padding: 4px 10px
-	color: #fff
+	padding: 4px
+	color: #B2B2B3
 	&:hover
 		text-decoration: none
-		color: #fff
+		color: #B2B2B3
+
+[data-action="start"]
+	display: none
 
 @import "media" // Always at the end

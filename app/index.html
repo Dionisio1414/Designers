@@ -12,10 +12,10 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 	<!-- Template Basic Images Start -->
-	
-<!--	<meta property="og:image" content="path/to/image.jpg">-->
+
+	<!--	<meta property="og:image" content="path/to/image.jpg">-->
 	<link rel="icon" href="img/favicon/favicon.ico">
-<!--
+	<!--
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
@@ -51,23 +51,24 @@
 		<div class="popup-menu__navigation">
 			<nav>
 				<ul>
-					<li><a href="#">ПРО НАС</a></li>
-					<li><a href="#">НОВИНИ</a></li>
-					<li><a href="#">АРХІВ ПОДІЙ</a></li>
-					<li><a href="#">ПЕРСОНАЛІЇ</a></li>
-					<li><a href="#">ПАМ'ЯТАЄМО</a></li>
-					<li><a href="#">КОНТАКТИ</a></li>
+					<li><a href="#about">ПРО НАС</a></li>
+					<li><a href="#news">НОВИНИ</a></li>
+					<li><a href="#s">АРХІВ ПОДІЙ</a></li>
+					<li><a href="#persons">ПЕРСОНАЛІЇ</a></li>
+					<li><a href="#m">ПАМ'ЯТАЄМО</a></li>
+					<li><a href="#footer">КОНТАКТИ</a></li>
 				</ul>
 			</nav>
 		</div>
 	</div>
-	
+
 	<div class="popup-overlay"></div>
 
 	<!-- End popup menu -->
 
 	<main role="main">
 		<header class="header">
+<!--
 			<div class="header__information">
 				<div class="container">
 					<div class="row">
@@ -99,6 +100,7 @@
 					</div>
 				</div>
 			</div>
+-->
 			<div class="header__bottom">
 				<div class="container">
 					<div class="row">
@@ -113,12 +115,12 @@
 						<div class="col-6 col-lg-10 col-xl-10 d-flex align-items-center justify-content-end">
 							<nav class="header__bottom-navigation">
 								<ul>
-									<li><a href="#">ПРО НАС</a></li>
-									<li><a href="#">НОВИНИ</a></li>
-									<li><a href="#">АРХІВ ПОДІЙ</a></li>
-									<li><a href="#">ПЕРСОНАЛІЇ</a></li>
-									<li><a href="#">ПАМ'ЯТАЄМО</a></li>
-									<li><a href="#">КОНТАКТИ</a></li>
+									<li><a href="#about">ПРО НАС</a></li>
+									<li><a href="#news">НОВИНИ</a></li>
+									<li><a href="#s">АРХІВ ПОДІЙ</a></li>
+									<li><a href="#persons">ПЕРСОНАЛІЇ</a></li>
+									<li><a href="#m">ПАМ'ЯТАЄМО</a></li>
+									<li><a href="#footer">КОНТАКТИ</a></li>
 								</ul>
 								<button type="button" class="hamburger">
 									<span></span>
@@ -126,6 +128,23 @@
 									<span></span>
 								</button>
 							</nav>
+							<div class="header__bottom-languages">
+								<a href="#"><img src="img/icons/email.svg" alt=""></a>
+								<ul>
+									<li><a href="#">УКр</a></li>
+									<li><a href="#">EN</a></li>
+								</ul>
+							</div>
+							<div class="header__bottom-search">
+								<input type="text" name="search" placeholder="Поиск">
+								<button type="button">
+									<img src="img/icons/search.png" alt="">
+								</button>
+								<div class="close">
+									<span></span>
+									<span></span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -140,7 +159,7 @@
 			</div>
 		</section>
 
-		<section class="description" style="background-image: url(img/banner-description.png); background-repeat: no-repeat; background-size: cover;">
+		<section class="description" style="background-image: url(img/banner-description.png); background-repeat: no-repeat; background-size: cover;" id="about">
 			<div class="container">
 				<div class="row">
 					<div class="description__container">
@@ -162,7 +181,7 @@
 			</div>
 		</section>
 
-		<section class="news">
+		<section class="news" id="news">
 			<h2>НОВИНИ</h2>
 			<div class="news__container">
 				<div class="container">
@@ -205,22 +224,7 @@
 			<a href="#" class="button">Архів подій</a>
 		</section>
 
-		<section class="partners">
-			<h2>ПАРТНЕРИ</h2>
-			<div class="partners__container">
-				<div class="partners__container-image">
-					<img src="img/partners/partner-1.png" alt="" class="img-reponsive">
-				</div>
-				<div class="partners__container-image">
-					<img src="img/partners/hdmm.png" alt="" class="img-reponsive">
-				</div>
-				<div class="partners__container-image">
-					<img src="img/partners/kubis.png" alt="" class="img-reponsive">
-				</div>
-			</div>
-		</section>
-
-		<section class="persons">
+		<section class="persons" id="persons">
 			<h2>ПЕРСОНАЛІЇ</h2>
 			<div class="container">
 				<div class="row">
@@ -424,17 +428,40 @@
 			</div>
 			<a href="#" class="button">ПАМ'ЯТАЄМО</a>
 		</section>
+		
+		<section class="partners" id="partners">
+			<h2>ПАРТНЕРИ</h2>
+			<div class="partners__container">
+				<div class="partners__container-image">
+					<a href="#"><img src="img/partners/partner-1.png" alt="" class="img-reponsive"></a>
+				</div>
+				<div class="partners__container-image">
+					<a href="#"><img src="img/partners/hdmm.png" alt="" class="img-reponsive"></a>
+				</div>
+				<div class="partners__container-image">
+					<a href="#"><img src="img/partners/kubis.png" alt="" class="img-reponsive"></a>
+				</div>
+			</div>
+		</section>
 
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-lg-4 col-xl-4">
+					<div class="col-12 col-lg-3 col-xl-3">
 						<div class="footer__navigation">
 							<nav>
 								<ul>
 									<li><a href="#">ПРО НАС</a></li>
 									<li><a href="#">НОВИНИ</a></li>
 									<li><a href="#">АРХІВ ПОДІЙ</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>					
+					<div class="col-12 col-lg-3 col-xl-3">
+						<div class="footer__navigation">
+							<nav>
+								<ul>
 									<li><a href="#">ПЕРСОНАЛІЇ</a></li>
 									<li><a href="#">ПАМ'ЯТАЄМО</a></li>
 									<li><a href="#">КОНТАКТИ</a></li>
@@ -442,7 +469,7 @@
 							</nav>
 						</div>
 					</div>
-					<div class="col-12 col-lg-4 col-xl-4">
+					<div class="col-12 col-lg-3 col-xl-3">
 						<div class="footer__socials">
 							<div class="contacts">
 								<span>
@@ -461,11 +488,11 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-12 col-lg-4 col-xl-4">
+					<div class="col-12 col-lg-3 col-xl-3">
 						<div class="footer__brands">
-							<img src="img/partners/partner-1-white.png" alt="" class="img-responsive">
-							<img src="img/partners/hdmm-white.png" alt="" class="img-responsive">
-							<img src="img/partners/kubis-white.png" alt="" class="img-responsive">
+							<a href="#"><img src="img/partners/partner-1-white.png" alt="" class="img-responsive"></a>
+							<a href="#"><img src="img/partners/hdmm-white.png" alt="" class="img-responsive"></a>
+							<a href="#"><img src="img/partners/kubis-white.png" alt="" class="img-responsive"></a>
 						</div>
 					</div>
 				</div>

@@ -2,15 +2,37 @@
 
 +media-breakpoint-down(lg)
 	
+	.home 
+		height: auto
+		.tns-item 
+			height: auto
+			img
+				height: auto
+				object-fit: fill 
+	
 	.description
 		&__container
 			&-image 
 				img
 					max-width: 400px
+					height: 100%
+					object-fit: cover
 			&-text 
 				p
 					font-size: 16px
 					line-height: 27px
+	
+	.header
+		&__bottom
+			&-navigation 
+				ul 
+					li
+						margin-right: 12px
+						a
+							font-size: 13px
+			&-search 
+				input
+					width: 125px
 		
 +media-breakpoint-down(md)
 	
@@ -48,6 +70,12 @@
 					&:first-child,
 					&:nth-child(2)
 						margin-bottom: 15px
+	
+	.header
+		&__bottom
+			&-languages,
+			&-search
+				display: none
 	
 	.footer
 		&__navigation
@@ -119,7 +147,10 @@
 		&__container
 			&-image 
 				img
-					max-width: 100%
+					max-width: none
+					width: 100%
+					object-fit: scale-down
+					
 	
 	.news
 		&__container 
@@ -130,6 +161,10 @@
 							margin-bottom: 15px
 	
 	.header
+		&.fixed 
+			.header__bottom-logo 
+				img
+					max-width: 55px
 		&__information
 			&-socials
 				display: none

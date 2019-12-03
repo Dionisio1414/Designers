@@ -47,6 +47,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/tiny-slider/dist/min/tiny-slider.helper.ie8.js',
 		'app/libs/tiny-slider/dist/min/tiny-slider.js',
+		'./node_modules/smooth-scroll/dist/smooth-scroll.min.js',
 //		'app/libs/slick-carousel/slick/slick.min.js',
 		'app/js/common.js' // Always at the end
 		])

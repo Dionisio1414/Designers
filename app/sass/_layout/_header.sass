@@ -1,4 +1,13 @@
 .header
+	border-top: 3px solid set-color(accent)
+	&.fixed
+		position: fixed
+		top: 0
+		width: 100%
+		z-index: 10
+		.header__bottom-logo 
+			img
+				max-width: 80px
 	&__information
 		background-color: set-color(accent)
 		padding: 12px 0
@@ -97,14 +106,57 @@
 	&__bottom
 		background-color: #878787
 		transition: .5s ease
-		&.fixed
-			position: fixed
-			top: 0
-			width: 100%
-			z-index: 10
-			.header__bottom-logo 
+		&-languages
+			display: flex
+			align-items: center
+			margin-left: 22px
+			margin-right: 10px
+			> a
 				img
-					max-width: 80px
+					max-width: 25px
+					margin-right: 10px
+			ul
+				padding: 0
+				margin: 0
+				list-style-type: none
+				font-size: 0
+				li
+					display: inline-block
+					margin-right: 5px
+					&:last-child
+						margin: 0
+					a
+						font-size: 14px
+						text-decoration: none
+						text-transform: uppercase
+						color: #fff
+		&-search
+			position: relative
+			min-width: 38px
+			button
+				//position: absolute
+				//right: 0
+				//top: 50%
+				//transform: translateY(-50%)
+				display: inline-block
+				background-color: transparent
+				border: none
+				outline: 0
+				height: 100%
+				img
+					max-width: 25px
+			input
+				font-family: $semibold
+				font-size: 16px
+				border: 1px solid #fff
+				background-color: transparent
+				padding: 3px 10px
+				color: #fff
+				width: 160px
+				transition: .5s ease-in-out
+				&::placeholder
+					font-size: 14px
+					color: #fff
 		&-logo
 			img
 				max-width: 90px
@@ -150,7 +202,7 @@
 				font-size: 0
 				li
 					display: inline-block
-					margin-right: 41px
+					margin-right: 25px
 					&:last-child
 						margin: 0
 					a
