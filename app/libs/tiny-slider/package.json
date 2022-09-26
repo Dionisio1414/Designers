@@ -39,7 +39,7 @@
     "babel-core": "^6.26.3",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "nightwatch": "^0.9.21",
+    "nightwatch": "^2.3.9",
     "nodemon": "^1.17.5"
   },
   "browserify": {
